@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAVANNA - Web Design Blog</title>
+  <style>
+    :root {
+      --primary: #ff6f61;
+      --accent: #6a1b9a;
+      --light-bg: #fdf6f9;
+      --soft-accent: #d1c4e9;
+      --hover-accent: #ab47bc;
+      --text-main: #2c2c2c;
+      --text-muted: #555;
+      --box-bg: #ffffff;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, var(--light-bg), #f3e5f5);
+      color: var(--text-main);
+      line-height: 1.6;
+      font-weight: bold;
+    }
+    header {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    nav {
+      background-color: var(--accent);
+      text-align: center;
+      padding: 1rem;
+    }
+    nav a {
+      color: #fce4ec;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover, nav a:focus {
+      color: var(--hover-accent);
+    }
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    section {
+      flex: 2;
+      background: var(--box-bg);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+    aside {
+      flex: 1;
+      background: var(--soft-accent);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+    h2, h3 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    article {
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 1rem;
+    }
+    article p {
+      color: var(--text-muted);
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      font-size: 0.95rem;
+    }
+    img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      display: block;
+      margin: 1rem auto;
+    }
+    .profile-photo {
+      max-width: 300px;
+      border-radius: 50%;
+    }
+    .bio {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    @media (max-width: 768px) {
+      main { flex-direction: column; }
+      nav a { display: inline-block; margin: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to SAVANNA’s Web Blog</h1>
+    <p>Sharing knowledge about Web Design, HTML5, CSS, and JavaScript</p>
+  </header>
+  <nav>
+    <a href="Untitled-2.html">Music</a>
+    <a href="Untitled-5.html">Blogs</a>
+    <a href="Untitled-1.html">Contact</a>
+    <a href="Untitled-14.html">Dashboard</a>
+  </nav>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <img src="ban.jpg" alt="Your Photo" class="profile-photo">
+      <div class="bio">
+        <p>Hello! I'm Savanna, a passionate web designer and developer from Gumaca, Quezon...</p>
+      </div>
+    </section>
+    <aside>
+      <h2>My Social Media</h2>
+      <ul>
+        <li><a href="https://www.facebook.com/">Facebook</a></li>
+        <li><a href="https://www.instagram.com/">Instagram</a></li>
+        <li><a href="https://x.com/?lang=en">Twitter</a></li>
+        <li><a href="https://www.tiktok.com/foryou?lang=en">TikTok</a></li>
+      </ul>
+      <h3>Popular Topics</h3>
+      <ul>
+        <li><a href="https://www.w3schools.com/html/html_css.asp">HTML & CSS Basics</a></li>
+        <li><a href="https://www.w3schools.com/Js/">JavaScript Fundamentals</a></li>
+        <li><a href="https://www.w3schools.com/html/html_responsive.asp">Responsive Web Design</a></li>
+        <li><a href="https://www.w3schools.com/cs/index.php">C# Basics</a></li>
+      </ul>
+    </aside>
+  </main>
+  <footer>
+    <p>&copy; 2024 SAVANNA. All rights reserved.</p>
+  </footer>
+</body>
+</html>
