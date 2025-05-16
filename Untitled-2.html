@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music Player</title>
+  <style>
+    :root {
+      --primary-color: #ff6f61;
+      --accent-color: #6a1b9a;
+      --light-bg: rgba(253, 246, 249, 0.8);
+      --button-hover: #ab47bc;
+      --text-color: #2c2c2c;
+      --muted-text: #555;
+      --box-bg: #ffffffcc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+      filter: brightness(0.6) blur(2px);
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text-color);
+      line-height: 1.6;
+      text-align: center;
+      padding: 40px;
+      background-color: var(--light-bg);
+    }
+
+    .music-player {
+      background-color: var(--box-bg);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      max-width: 400px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .artist-info {
+      margin-bottom: 20px;
+    }
+
+    .artist-info h2 {
+      color: var(--primary-color);
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .artist-info p {
+      color: var(--accent-color);
+      font-size: 1.2rem;
+    }
+
+    .album-cover {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 12px;
+      margin: 20px auto;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 10px;
+      outline: none;
+      border-radius: 8px;
+    }
+
+    .play-button {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+    }
+
+    .play-button:hover {
+      background-color: var(--button-hover);
+    }
+
+    footer {
+      margin-top: 40px;
+      color: var(--primary-color);
+      font-size: 0.9rem;
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Live Video Background -->
+  <video autoplay muted loop class="video-bg">
+    <source src="cu.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Music Player Card -->
+  <div class="music-player">
+    <div class="artist-info">
+      <h2>Artist: NIKI</h2>
+    </div>
+
+    <img src="niki.jpg" alt="NIKI Album Cover" class="album-cover" />
+
+    <audio id="audio-player" controls>
+      <source src="nikii.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <button class="play-button" onclick="document.getElementById('audio-player').play()">
+      Play Music
+    </button>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 SAVANNA. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

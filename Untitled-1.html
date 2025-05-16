@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <style>
+    :root {
+      --primary-color: #d63384;
+      --accent-color: #ff6f91;
+      --background-color: #ffe6f0;
+      --button-hover: #c2185b;
+      --text-dark: #4b2e39;
+      --input-bg: #ffffff;
+      --input-border: #e4b4c2;
+      --input-focus: #ff4081;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-dark);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .contact-form-container {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: var(--primary-color);
+      font-size: 1.8rem;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 1rem;
+      border: 1px solid var(--input-border);
+      border-radius: 8px;
+      font-size: 1rem;
+      color: var(--text-dark);
+      background-color: var(--input-bg);
+      transition: border-color 0.3s ease;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      border-color: var(--input-focus);
+    }
+
+    .contact-form button {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: var(--button-hover);
+    }
+
+    .contact-form button:active {
+      background-color: var(--accent-color);
+    }
+
+    .message {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: var(--primary-color);
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-form-container">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <div class="message">
+      <p>Thank you for reaching out! We'll get back to you soon.</p>
+    </div>
+  </div>
+</body>
+</html>

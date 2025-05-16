@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Posts</title>
+  <style>
+    :root {
+      --primary-color: #d63384;
+      --accent-color: #ff6f91;
+      --background-color: #ffe6f0;
+      --button-hover: #c2185b;
+      --text-dark: #4b2e39;
+      --input-bg: #ffffff;
+      --input-border: #e4b4c2;
+      --input-focus: #ff4081;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-dark);
+      padding: 40px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      color: var(--primary-color);
+      font-size: 2.5rem;
+    }
+
+    .blog-posts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .blog-post {
+      background-color: #ffffff;
+      width: 100%;
+      max-width: 350px;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .blog-post:hover {
+      transform: translateY(-10px);
+    }
+
+    .blog-post h3 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .blog-post p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .blog-post a {
+      text-decoration: none;
+      color: var(--primary-color);
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .blog-post a:hover {
+      color: var(--accent-color);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: var(--primary-color);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Latest Blog Posts</h1>
+  </header>
+  <div class="blog-posts">
+    <div class="blog-post">
+      <h3>Understanding HTML5 Semantics</h3>
+      <p>HTML5 introduced new semantic elements that help define the structure of web pages...</p>
+      <a href="#">Read More</a>
+    </div>
+    <div class="blog-post">
+      <h3>CSS Flexbox: A Beginner's Guide</h3>
+      <p>Flexbox is a powerful tool for creating responsive layouts with minimal code...</p>
+      <a href="#">Read More</a>
+    </div>
+    <div class="blog-post">
+      <h3>Mastering CSS Grid for Layouts</h3>
+      <p>CSS Grid is a layout system that allows you to design complex layouts with ease...</p>
+      <a href="#">Read More</a>
+    </div>
+    <div class="blog-post">
+      <h3>Responsive Web Design Tips</h3>
+      <p>Responsive web design ensures that your website looks good on all screen sizes...</p>
+      <a href="#">Read More</a>
+    </div>
+    <div class="blog-post">
+      <h3>Intro to JavaScript for Beginners</h3>
+      <p>JavaScript is the most popular programming language for the web...</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 SAVANNA. All rights reserved.</p>
+  </footer>
+</body>
+</html>
